@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:deviceIds="tv" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="185dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/fondo"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="185dp"
+                android:layout_height="125dp"
+                android:src="@drawable/icon_logo" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/default_background"
+                android:text="Temporada 1" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/default_background"
+                android:text="Temporada 2" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/default_background"
+                android:text="Temporada 3" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/default_background"
+                android:text="Temporada 4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_gradient_end"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="215dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/portada" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="@color/background_gradient_end"
+                android:gravity="center"
+                android:text="TEMPORADA 1"
+                android:textColor="@color/fastlane_background"
+                android:textSize="20dp" />
+
+            <GridLayout
+                android:id="@+id/gl_cartas"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:columnCount="4">
+
+                <ImageButton
+                    android:id="@+id/video_1"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#fff"
+                    android:scaleType="centerCrop"
+                    android:tag="1"
+                    android:onClick="verVideo"
+                    android:src="@drawable/icon_logo" />
+
+                <ImageButton
+                    android:src="@drawable/icon_logo"
+                    android:id="@+id/video_2"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#fff"
+                    android:scaleType="centerCrop"
+                    android:onClick="verVideo"
+                    android:tag="2"/>
+
+                <ImageButton
+                    android:src="@drawable/icon_logo"
+                    android:id="@+id/video_3"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#fff"
+                    android:scaleType="centerCrop"
+                    android:tag="3"
+                    android:onClick="verVideo"/>
+
+                <ImageButton
+                    android:src="@drawable/icon_logo"
+                    android:id="@+id/video_4"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#fff"
+                    android:scaleType="centerCrop"
+                    android:onClick="verVideo"
+                    android:tag="4" />
+
+            </GridLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
